@@ -1,7 +1,9 @@
 ### TODO
 - Data generation?
+  - Possible color implementation method
 - Toggle
 - Directional Placement
+- Legal and License
 
 ### Block Types and Features
 Ground Lights
