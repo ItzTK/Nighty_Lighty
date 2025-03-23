@@ -23,6 +23,7 @@ Ceiling Lights
   - Ceiling only
   - 4 rotations
   - (TK: Wall placement)
+  - (TK: Toggle via rmb and redstone)
 - Variants
   - Fairy Lights
   - Ceiling Lights
