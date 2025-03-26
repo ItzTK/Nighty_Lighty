@@ -26,7 +26,7 @@
         }
     },
     "result": {
-        "item": "nightylighty:mushroom_green",
+        "id": "nightylighty:mushroom_green",
         "count": 1
     },
     "group": "mushroom_green"

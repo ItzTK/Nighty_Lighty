@@ -26,7 +26,7 @@
         }
     },
     "result": {
-        "item": "nightylighty:frog_light_blue",
+        "id": "nightylighty:frog_light_blue",
         "count": 1
     },
     "group": "frog_light_blue"
