@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "nightylighty:block/night_light_mushroom1",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "nightylighty:block/mushroom_red",
+		"particle": "nightylighty:block/mushroom_red"
+	}
+}

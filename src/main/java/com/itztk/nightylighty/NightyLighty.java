@@ -1,6 +1,7 @@
 package com.itztk.nightylighty;
 
 import com.itztk.nightylighty.block.ModBlocks;
+import com.itztk.nightylighty.block.NightyLightyGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +14,7 @@ public class NightyLighty implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		NightyLightyGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 	}
 }

@@ -46,9 +46,7 @@ public class FloorBlock extends HorizontalFacingBlock {
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        // Preserve the original rotation math
-        float yaw = ctx.getPlayerYaw();
-        int rotation = MathHelper.floor((180.0F + yaw) * 16.0F / 360.0F + 0.5F) & 15;
+        int rotation = MathHelper.floor((180.0F + ctx.getPlayerYaw()) * 16.0F / 360.0F + 0.5F) & 15;
         return this.getDefaultState().with(ROTATION, rotation);
     }
 
@@ -57,7 +55,6 @@ public class FloorBlock extends HorizontalFacingBlock {
         if(!world.isClient()) {
             world.setBlockState(pos, state.cycle(CLICKED));
         }
-
         return ActionResult.SUCCESS;
     }
 
