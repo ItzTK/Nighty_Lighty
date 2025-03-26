@@ -16,11 +16,9 @@ import org.jetbrains.annotations.Nullable;
 
 public class FloorBlock extends HorizontalFacingBlock {
     public static final MapCodec<FloorBlock> CODEC = createCodec(FloorBlock::new);
-    public static final BooleanProperty CLICKED = BooleanProperty.of("clicked");
 
     public FloorBlock(Settings settings) {
         super(settings);
-        setDefaultState(this.getDefaultState().with(CLICKED, false));
     }
 
     @Override
@@ -34,18 +32,7 @@ public class FloorBlock extends HorizontalFacingBlock {
     }
 
     @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        if(!world.isClient()) {
-            world.setBlockState(pos, state.cycle(CLICKED));
-        }
-
-        return ActionResult.SUCCESS;
-    }
-
-
-    @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
-        builder.add(CLICKED);
     }
 }

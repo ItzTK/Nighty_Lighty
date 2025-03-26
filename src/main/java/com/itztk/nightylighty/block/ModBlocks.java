@@ -16,8 +16,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block FROG_BLACK = registerBlock("frog_black",
-            new FloorBlock(AbstractBlock.Settings.create()
-                    .nonOpaque().strength(1f).requiresTool().luminance(state -> state.get(FloorBlock.CLICKED) ? 15 : 0)));
+            new FloorBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+
     // Note to self, you were registering a frog block, after creating the floor block class.
 
     private static Block registerBlock(String name, Block block) {
