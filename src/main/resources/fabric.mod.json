@@ -1,18 +1,19 @@
 {
 	"schemaVersion": 1,
-	"id": "nighty-lighty",
+	"id": "nightylighty",
 	"version": "${version}",
 	"name": "Nighty Lighty",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Night Lights for fabric 1.21.1!",
 	"authors": [
-		"Me!"
+		"Joosh and samgj15",
+		"ItzTK"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/ItzTK/Nighty_Lighty"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/nighty-lighty/icon.png",
+	"license": "LGPL-3.0-only",
+	"icon": "assets/nightylighty/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -20,6 +21,9 @@
 		],
 		"fabric-datagen": [
 			"com.itztk.nightylighty.NightyLightyDataGenerator"
+		],
+		"client": [
+			"com.itztk.nightylighty.NightyLightyClient"
 		]
 	},
 	"mixins": [
