@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "nightylighty:hanging_lights"
+		},
+		{
+			"item": "minecraft:green_dye"
+		}
+	],
+	"result": {
+		"item": "nightylighty:hanging_lights_green",
+		"count": 1
+	}
+}
