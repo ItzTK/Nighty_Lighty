@@ -23,8 +23,8 @@
     "clicked=true,rotation=5": {
       "model": "nightylighty:block/frog_black3"
     },
-    "clicked=true,rotation=6": {      
-    "model": "nightylighty:block/frog_black2"
+    "clicked=true,rotation=6": {
+      "model": "nightylighty:block/frog_black2"
     },
     "clicked=true,rotation=7": {
       "model": "nightylighty:block/frog_black1"
@@ -60,7 +60,7 @@
       "model": "nightylighty:block/frog_black1",
       "y": 180
     },
-      "clicked=false,rotation=0": {
+    "clicked=false,rotation=0": {
       "model": "nightylighty:block/frog_black",
       "y": 180
     },
@@ -83,8 +83,8 @@
     "clicked=false,rotation=5": {
       "model": "nightylighty:block/frog_black3"
     },
-    "clicked=false,rotation=6": {      
-    "model": "nightylighty:block/frog_black2"
+    "clicked=false,rotation=6": {
+      "model": "nightylighty:block/frog_black2"
     },
     "clicked=false,rotation=7": {
       "model": "nightylighty:block/frog_black1"

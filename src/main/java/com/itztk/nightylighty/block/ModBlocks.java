@@ -3,6 +3,7 @@ package com.itztk.nightylighty.block;
 import com.itztk.nightylighty.NightyLighty;
 import com.itztk.nightylighty.block.custom.FloorBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -16,8 +17,8 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block FROG_BLACK = registerBlock("frog_black",
-            new FloorBlock(AbstractBlock.Settings.create().nonOpaque()));
-
+            new FloorBlock(AbstractBlock.Settings.create().nonOpaque().strength(1f).requiresTool().sounds(BlockSoundGroup.GLASS).luminance(state -> state.get(FloorBlock.CLICKED) ? 8 : 0)));
+    public static final Block FROG_BLUE = registerBlock("frog_blue", new FloorBlock(AbstractBlock.Settings.copy(FROG_BLACK)));
 
     // Note to self, you were registering a frog block, after creating the floor block class.
 
@@ -36,6 +37,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.FROG_BLACK);
+            entries.add(ModBlocks.FROG_BLUE);
         });
     }
 }
