@@ -18,6 +18,7 @@ Ground Lights
   - Mushroom Night Light
   - Octopus Night Light
   - (TK: Bunny Night Light)
+  - (TK: Pokeball Night Light)
 Ceiling Lights
 - Features
   - Colors
