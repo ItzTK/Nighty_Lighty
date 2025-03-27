@@ -26,7 +26,7 @@ public class CeilingBlock extends HorizontalFacingBlock {
 
     public CeilingBlock(Settings settings) {
         super(settings);
-        setDefaultState(this.getDefaultState().with(CLICKED, false));
+        setDefaultState(this.getDefaultState().with(CLICKED, true));
     }
 
     @Override
